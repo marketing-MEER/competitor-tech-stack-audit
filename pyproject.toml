@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "competitor-tech-stack-audit"
+version = "1.0.0"
+description = "Side-by-side technical profile: CMS, schema types, hreflang, robots.txt, llms.txt, AI-crawler rules, speed"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Meer Hamza", email = "meerhamza5@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["requests>=2.28", "beautifulsoup4>=4.11", "pandas>=1.5", "openpyxl>=3.1", "click>=8.1"]
+keywords = ["seo", "competitor", "tech", "stack", "audit"]
+
+[project.urls]
+Homepage = "https://github.com/marketing-MEER/competitor-tech-stack-audit"
+"SEO Toolbox" = "https://github.com/marketing-MEER/seo-toolbox"
+LinkedIn = "https://www.linkedin.com/in/meerhamza-seo"
+
+[project.scripts]
+competitor-tech-stack-audit = "competitor_tech_stack_audit.cli:main"
+
+[tool.setuptools]
+packages = ["competitor_tech_stack_audit"]
